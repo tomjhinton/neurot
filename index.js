@@ -13,8 +13,9 @@ function draw2(startX, startY, len, angle) {
   var a = Math.random()
   var color = "rgba("+r+","+g+","+b+','+a+")"
   let blah = Math.floor(Math.random() * 18)
+  ctx.globalAlpha = 0.2;
   ctx.strokeStyle = color
-  ctx.lineWidth = Math.random()
+  ctx.lineWidth = Math.random()*3
       ctx.beginPath()
       ctx.save()
 
