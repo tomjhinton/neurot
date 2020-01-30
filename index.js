@@ -3,7 +3,7 @@ const canvas = createCanvas(800, 800)
 const ctx = canvas.getContext('2d')
 require('dotenv').config()
 var Twitter = require('twitter');
-const PORT = process.env.PORT || 3000;
+
 
 
 function draw2(startX, startY, len, angle) {
@@ -105,7 +105,7 @@ const arr =[ `draw2(Math.random()*90, Math.random()*50, 100, Math.random()*4)
     draw3(Math.random()*50, Math.random()*50, 150, Math.random()*4)
     draw3(Math.random()*250, Math.random()*200, 170, Math.random()*4)
     draw3(Math.random()*250, Math.random()*350, 180, Math.random()*4)`]
-setInterval(function () {
+
   eval(arr[Math.floor(Math.random()*2)])
 
 
@@ -160,5 +160,3 @@ setInterval(function () {
 
     }
   })
-
-}, 300000);
