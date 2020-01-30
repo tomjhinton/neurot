@@ -106,7 +106,7 @@ const arr =[ `draw2(Math.random()*90, Math.random()*50, 100, Math.random()*4)
     draw3(Math.random()*250, Math.random()*200, 170, Math.random()*4)
     draw3(Math.random()*250, Math.random()*350, 180, Math.random()*4)`]
 
-  eval(arr[Math.floor(Math.random()*2)])
+  eval(arr[Math.round(Math.random()*2)])
 
 
   var client = new Twitter({
@@ -117,24 +117,6 @@ const arr =[ `draw2(Math.random()*90, Math.random()*50, 100, Math.random()*4)
   })
 
 
-  // client.post('statuses/update', {status: 'I am a tweet'}, function(error, tweet, response) {
-  //   if (!error) {
-  //     console.log(tweet);
-  //   }
-  // });
-
-
-
-  // client.post('media/upload', { media_data: canvas.toBuffer().toString('base64') }, function (err, data, response) {
-  //
-  //   // now we can reference the media and post a tweet (media will attach to the tweet)
-  //   var mediaIdStr = data.media_id_string
-  //   var params = { media_ids: [mediaIdStr] }
-  //
-  //   client.post('statuses/update', params, function (err, data, response) {
-  //     console.log(data)
-  //   })
-  // })
 
   var data = canvas.toBuffer().toString('base64')
 
