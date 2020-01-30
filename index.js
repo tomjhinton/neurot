@@ -13,6 +13,8 @@ function draw2(startX, startY, len, angle) {
   var a = Math.random()
   var color = "rgba("+r+","+g+","+b+','+a+")"
   let blah = Math.floor(Math.random() * 18)
+  ctx.strokeStyle = color
+  ctx.lineWidth = Math.random()
       ctx.beginPath()
       ctx.save()
 
@@ -21,8 +23,7 @@ function draw2(startX, startY, len, angle) {
       ctx.moveTo(0, 0)
       ctx.bezierCurveTo(10, -len/2, 30, -len/2, 0, -len)
       ctx.stroke()
-      ctx.strokeStyle = color
-      ctx.lineWidth = Math.random()
+
 
 
       if(len < 5) {
@@ -42,6 +43,7 @@ function draw(startX, startY, len, angle) {
       var b = Math.floor((Math.random() * 256));
       var a = Math.random()
       var color = "rgba("+r+","+g+","+b+','+a+")";
+      ctx.strokeStyle = color
             ctx.beginPath()
             ctx.save()
             ctx.strokeStyle = color
@@ -68,7 +70,8 @@ function draw(startX, startY, len, angle) {
            var b = Math.floor((Math.random() * 256))
            var a = Math.random()
            var color = "rgba("+r+","+g+","+b+','+a+")"
-
+           ctx.strokeStyle = color
+           ctx.lineWidth = Math.random()
                ctx.beginPath()
                ctx.save()
 
@@ -77,8 +80,7 @@ function draw(startX, startY, len, angle) {
                ctx.moveTo(0, 0)
                ctx.bezierCurveTo(Math.random()*20, -len/2, 30, -len/2, 0, -len)
                ctx.stroke()
-               ctx.strokeStyle = color
-               ctx.lineWidth = Math.random()
+
 
 
                if(len < 7) {
